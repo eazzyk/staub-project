@@ -10,7 +10,7 @@
     <header>
       <section class="header__block">
         <div class="header__content container">
-          <a href="./index.html">
+          <a href="./index.html" aria-label="Main page">
             <img
               class="header__logo"
               src="./img/logo-p.png"
@@ -21,12 +21,163 @@
       </section>
     </header>
     <main>
-      <section class="hero__block"></section>
+      <div class="hero__block">
+        <section class="hero container">
+          <h1 class="hero__header">
+            The Cast Iron You <span class="hero__header--2"></span> Can Trust
+          </h1>
+          <p class="hero__info">
+            For nearly 50 years, Staub has handcrafted exceptional cast iron
+            cookware in the Alsace region of France. Our enameled cast iron
+            combines the heating performance and longevity of pure cast iron
+            with the colorful, smooth enameled finish that makes Staub so
+            distinctive.
+          </p>
+          <button aria-label="Price" class="hero__btn">
+            Check Price
+            <svg class="button-icon" width="32" height="32">
+              <use href="./img/sprite.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </section>
+      </div>
+      <section class="main__benefits container">
+        <!-- <div class="bnf"> -->
+
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__icon" width="75" height="70">
+                <use href="./img/sprite.svg#draft2digital-icon"></use>
+              </svg>
+              <h2 class="benefits__header">Timeless Craftsmanship</h2>
+              <p class="benefits__info">
+                With Staub’s exceptional ability to enhance flavors, lock in
+                juices, retain heat and deliver perfect sear marks, your meals
+                reach new heights.
+              </p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__icon" width="75" height="70">
+                <use href="./img/sprite.svg#uncharted-icon"></use>
+              </svg>
+              <h2 class="benefits__header">Versatile Functionality</h2>
+              <p class="benefits__info">
+                With Staub’s exceptional ability to enhance flavors, lock in
+                juices, retain heat and deliver perfect sear marks, your meals
+                reach new heights.
+              </p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__icon" width="75" height="70">
+                <use href="./img/sprite.svg#concierge-bell-icon"></use>
+              </svg>
+              <h2 class="benefits__header">Superior Results</h2>
+              <p class="benefits__info">
+                With Staub’s exceptional ability to enhance flavors, lock in
+                juices, retain heat and deliver perfect sear marks, your meals
+                reach new heights.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- </div> -->
+      </section>
+      <section class="main__products container">
+        <h2 class="main__products__header">Choose Your cookware</h2>
+        <p class="products__info">
+          With standout designs that transition beautifully from stovetop to
+          table, Staub’s cookware adds function and French flair to any kitchen.
+          Discover centuries of French culinary heritage built into every piece.
+        </p>
+        <ul class="products__list">
+          <li class="products__item">
+            <div class="products__content">
+              <img
+                src="https://thestaub.com/wp-content/uploads/2023/12/staub1.jpg"
+                alt="Product 1"
+              />
+              <h2 class="products__header">Cast Iron Dutch Oven</h2>
+              <p class="products__descr">
+                <b>Staub</b>
+                Cast Iron Dutch Oven 5-qt Tall Cocotte, Made in France
+              </p>
+              <a href="#" aria-label="Product Price" class="products__btn"
+                >Check price</a
+              >
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__content">
+              <img
+                src="https://thestaub.com/wp-content/uploads/2023/12/staub2.jpg"
+                alt="Product 1"
+              />
+              <h2 class="products__header">WANABE</h2>
+              <p class="products__descr">
+                <b>Staub</b>
+                Wa-NABE 40501-006 Wanabe, Gray, M, 7.1 inches (18 cm), Double
+                Handed, Cast Enamel, Pot, Rice Cooking, 2 Cups, Induction
+                Compatible
+              </p>
+              <a href="#" aria-label="Product Price" class="products__btn"
+                >Check price</a
+              >
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__content">
+              <img
+                src="https://thestaub.com/wp-content/uploads/2023/12/staub3.jpg"
+                alt="Product 1"
+              />
+              <h2 class="products__header">Ceramics Baking Pans</h2>
+              <p class="products__descr">
+                <b>Staub</b>
+                Ceramics 4-pc Baking Pans Set, Casserole Dish with Lid, Brownie
+                Pan, Cherry
+              </p>
+              <a href="#" aria-label="Product Price" class="products__btn"
+                >Check price</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="feedback__form--block container">
+        <div class="feedback__form--box">
+          <h2 class="feedback__form--header">Subscribe and get A discount</h2>
+          <p class="feedback__form--info"></p>
+
+          <form class="feedback__form">
+            <label for="email-send"></label>
+            <input
+              class="feedback__form--input"
+              type="email"
+              name="email-send"
+              id="email-send"
+              placeholder="Your Email Adress *"
+              required
+            />
+            <button class="feedback__form--btn" type="submit">
+              Subscribe
+              <svg width="24" height="24" class="footer__btn--icon">
+                <use href="./images/icons.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="footer__block">
         <div class="footer__content container">
-          <a href="./index.html">
+          <a href="./index.html" aria-label="Main Page">
             <img
               class="footer__logo"
               src="./img/logo-pw2.png"
@@ -51,10 +202,15 @@
 
           <div class="footer__cont-box--3">
             <h4 class="footer__touch--hdr">Keep in touch</h4>
-            <a href="tel:6464662556">646-466-2556</a>
-            <p>Mon - Fri: 9AM-5PM (EST)</p>
+            <div class="footer__contacts">
+              <a href="tel:6464662556" aria-label="Telephone number"
+                >646-466-2556</a
+              >
+              <p>Mon - Fri: 9AM-5PM (EST)</p>
+            </div>
+
             <div class="touch__link--box">
-              <a href="">
+              <a href="" aria-label="App store">
                 <img
                   width="96px"
                   decoding="async"
@@ -63,7 +219,7 @@
                   class="touch__app-store"
                 />
               </a>
-              <a href=""
+              <a href="" aria-label="Google play"
                 ><img
                   width="96px"
                   decoding="async"

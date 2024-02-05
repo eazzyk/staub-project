@@ -40,6 +40,7 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -374,10 +375,23 @@ body {
 }
 
 .container {
-  padding-left: 120px;
-  padding-right: 120px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
 }
 
 .header__block {
@@ -417,6 +431,402 @@ body {
   }
 }
 
+.hero__block {
+  background-color: rgb(241, 241, 241);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://thestaub.com/wp-content/uploads/2023/11/Staub-cocotte-4-qt-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://thestaub.com/wp-content/uploads/2023/11/Staub-cocotte-4-qt-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.hero__info {
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.hero__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  max-width: 244px;
+  margin-top: 45px;
+  padding: 16px 35px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.65;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 128, 67);
+}
+
+.main__benefits {
+  margin-top: -65px;
+  margin-bottom: 70px;
+}
+
+.benef {
+  margin-top: -20px;
+  padding: 20px;
+  height: 50px;
+  background-color: aqua;
+}
+
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.benefits__item {
+  color: rgb(255, 255, 255);
+  padding-top: 85px;
+  padding-bottom: 85px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: rgb(24, 24, 24);
+}
+
+.benefits__content {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__item:nth-child(even) {
+  background-color: rgb(12, 13, 12);
+}
+
+.benefits__icon {
+  fill: currentColor;
+  margin-bottom: 25px;
+}
+
+.benefits__header {
+  display: block;
+  margin-bottom: 24px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgb(252, 185, 0);
+}
+
+.benefits__info {
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgb(255, 255, 255);
+}
+
+.main__products {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.products__item {
+  color: rgb(255, 255, 255);
+  padding-top: 85px;
+  padding-bottom: 85px;
+  padding-left: 35px;
+  padding-right: 35px;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  color: rgb(12, 13, 12);
+  background-color: rgb(242, 247, 246);
+}
+
+.products__content {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__products__header {
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  font-size: 35px;
+  line-height: 1.35;
+  color: rgb(12, 13, 12);
+}
+
+.products__header {
+  display: block;
+  margin-bottom: 24px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgb(12, 13, 12);
+}
+
+.products__info {
+  margin-left: 106px;
+  margin-right: 106px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgb(12, 13, 12);
+}
+
+.products__descr {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.products__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 169px;
+  padding: 16px 35px;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 128, 67);
+}
+
+.feedback__form--block {
+  position: relative;
+  top: 120px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://thestaub.com/wp-content/uploads/2023/12/staub-cast-iron-5-qt-tall-cocotte-tout-2c4bf57a6eed40c88fea51e3ebe162d6.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://thestaub.com/wp-content/uploads/2023/12/staub-cast-iron-5-qt-tall-cocotte-tout-2c4bf57a6eed40c88fea51e3ebe162d6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 180px 0;
+}
+
+.footer__form--box {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__form--box {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form--box {
+    -ms-flex-preferred-size: calc((100% - 160px) / 3);
+        flex-basis: calc((100% - 160px) / 3);
+    margin-top: 0;
+  }
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__form--input {
+  margin-bottom: 20px;
+  outline: none;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(172, 178, 199);
+}
+.feedback__form--input:hover, .feedback__form--input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(65, 128, 67);
+  color: rgb(0, 0, 0);
+}
+@media screen and (min-width: 768px) {
+  .feedback__form--input {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback__form--input {
+    min-width: 355px;
+  }
+}
+
+.feedback__form--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 169px;
+  padding: 16px 35px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 128, 67);
+}
+
+.feedback__form--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .feedback__form {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .footer__block {
   background-color: rgb(0, 0, 0);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("https://thestaub.com/wp-content/uploads/2022/07/footer-vegetables-background.svg");
@@ -506,6 +916,17 @@ body {
   letter-spacing: normal;
   font-size: 25px;
   color: rgb(255, 255, 255);
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
 }
 
 .touch__link--box {
